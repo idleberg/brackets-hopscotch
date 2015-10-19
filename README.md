@@ -37,7 +37,7 @@ Also [available](https://github.com/idleberg/Hopscotch) for these apps:
 
 1. Open the Extension Manager `File > Extension Manager`
 2. Switch to the “Themes” tab
-3. Search “*Hopscotch*” and Installation
+3. Search “*Hopscotch*” and install
 
 ### GitHub
 
