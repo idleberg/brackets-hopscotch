@@ -1,0 +1,155 @@
+/*
+ *  Hopscotch
+ *  by Jan T. Sott
+ *  https://github.com/idleberg/Hopscotch
+ */
+
+@import url(https://fonts.googleapis.com/css?family=Fira+Mono:400,700);
+
+.CodeMirror .CodeMirror-scroll {
+    background-color: #322931;
+    color: #b9b5b8;
+}
+
+.CodeMirror-focused .CodeMirror-activeline-background {
+    outline: 1px solid #433b42;
+    background: #433b42;
+}
+
+.show-line-padding .CodeMirror-focused .CodeMirror-activeline-background {
+    box-shadow: inset 15px 0 0 0 #433b42;
+}
+
+.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
+        background: #433b42;
+        color: #5c545b;
+}
+
+.CodeMirror-focused .CodeMirror-activeline .inline-widget .CodeMirror-gutter-elt {
+        color: #433b42;
+}
+
+.CodeMirror.find-highlighting div.CodeMirror-selected,
+.CodeMirror .CodeMirror.find-highlighting div.CodeMirror-selected {
+    background: #dd464c;
+}
+
+.CodeMirror-cursor {
+    border-left: 1px solid #b9b5b8 !important;
+}
+
+.CodeMirror-overwrite .CodeMirror-cursor {
+    border-left: none !important;
+    border-bottom: 1px solid #b9b5b8;
+}
+
+.CodeMirror-gutters {
+    background-color: #5c545b;
+    border-right: none;
+}
+
+.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
+    color: #b9b5b8;
+}
+
+.CodeMirror .CodeMirror-selected {
+    background: #5c545b;
+}
+.CodeMirror-focused .CodeMirror-selected {
+    background: #5c545b;
+}
+
+.CodeMirror-matchingbracket, .CodeMirror-matchingtag {
+    /* Ensure visibility against gray inline editor background */
+    background-color: #5c545b;
+    color: #b9b5b8 !important;
+}
+
+.cm-atom { color: #1290bf; }
+.cm-qualifier { color: #fdcc59; }
+.cm-def { color: #dd464c ; }
+.cm-keyword { color: #fdcc59; }
+.cm-comment { color: #999999; }
+.cm-string {color: #1290bf;}
+.cm-string-2 {color: #c85e7c;}
+.cm-variable { color: #149b93; }
+.cm-variable-2 { color: #fdcc59; }
+.cm-variable-3 { color: #fd8b19; }
+.cm-tag { color: #fd8b19; }
+.cm-attribute { color: #8fc13e; }
+.cm-property { color: #8fc13e; }
+.cm-number {color: #c85e7c; }
+.cm-meta {color: #fd8b19; }
+.cm-operator {color: #149b93; }
+.cm-builtin { color: #c85e7c; }
+.cm-hr { color: #c85e7c; }
+.cm-plus { color: #8fc13e; }
+.cm-bracket { color: #fd8b19; }
+.cm-error { color: #dd464c; }
+.cm-minus { color: #dd464c; }
+.cm-quote { color: #fdcc59; }
+
+/* Non-editor styling */
+
+#image-holder,
+#not-editor {
+    background-color: #5c545b;
+}
+
+#image-holder {
+    color: #5c545b;
+}
+
+/* Code Folding */
+
+.CodeMirror-foldgutter {
+  width: 2em;
+}
+
+.CodeMirror-foldgutter-open,
+.CodeMirror-foldgutter-folded,
+.CodeMirror-foldgutter-blank {
+  text-align: center;
+  width: 100%;
+}
+
+.CodeMirror-foldgutter-open,
+.CodeMirror-foldgutter-folded,
+.CodeMirror-foldgutter-blank::after {
+    position: relative;
+    top: 0.0625em;
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.33);
+  }
+
+.CodeMirror-foldmarker {
+  display: inline-block;
+  margin: 0 0.125em;
+  border-radius: 0.75em;
+  border: 0;
+  color: rgba(255, 255, 255, 0.66);
+  background-color: rgba(255, 255, 255, 0.16);
+}
+
+.CodeMirror-foldmarker::after {
+    content: '\2022\2022\2022';
+    position: relative;
+    top: -0.0625em;
+  }
+
+/* CSS Color Preview */
+
+.ico-cssColorPreview {
+  display: block;
+  width: 0.5em;
+  height: 1.25em;
+  margin: 0;
+  border: 0;
+}
+
+/* Document Toolbar */
+
+.ext-documents .document.selected {
+    background-color: #322931;
+}
+
