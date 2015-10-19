@@ -37,12 +37,12 @@ Also [available](https://github.com/idleberg/Hopscotch) for these apps:
 
 1. Open the Extension Manager `File > Extension Manager`
 2. Switch to the “Themes” tab
-3. Search “*Hopscotch*” and install
+3. Search and install “*Hopscotch*”
 
 ### GitHub
 
 1. Change to the [user extensions](https://github.com/adobe/brackets/wiki/Extension-Locations) directory
-2. Clone repository `git clone https://github.com/idleberg/brackets-hopscotch hopscotch`
+2. Clone repository `git clone https://github.com/idleberg/brackets-hopscotch idleberg.hopscotch`
 
 ## Recommended settings
 

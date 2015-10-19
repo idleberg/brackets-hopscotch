@@ -1,9 +1,9 @@
 {
-    "name": "hopscotch",
+    "name": "idleberg.hopscotch",
     "title": "Hopscotch",
     "description": "Color schemes inspired by the Hopscotch learning platform for kids",
     "homepage": "https://github.com/idleberg/brackets-hopscotch",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "author": "Jan T. Sott",
     "license": "CC0-1.0",
     "theme": {
