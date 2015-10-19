@@ -42,7 +42,7 @@ Also [available](https://github.com/idleberg/Hopscotch) for these apps:
 ### GitHub
 
 1. Change to the [user extensions](https://github.com/adobe/brackets/wiki/Extension-Locations) directory
-2. Clone repository `git clone https://github.com/idleberg/brackets-hopscotch`
+2. Clone repository `git clone https://github.com/idleberg/brackets-hopscotch hopscotch`
 
 ## Recommended settings
 
