@@ -2,6 +2,8 @@
 
 [![Creative Commons](https://img.shields.io/badge/license-CC0%201.0-orange.svg?style=flat-square)](http://creativecommons.org/publicdomain/zero/1.0/)
 [![GitHub](https://img.shields.io/github/release/idleberg/brackets-hopscotch.svg?style=flat-square)](https://github.com/idleberg/brackets-hopscotch/releases)
+[![David](https://img.shields.io/david/dev/idleberg/brackets-hopscotch.svg?style=flat-square)](https://david-dm.org/idleberg/brackets-hopscotch#info=devDependencies)
+[![Travis CI](https://img.shields.io/travis/idleberg/brackets-hopscotch.svg?style=flat-square)](https://travis-ci.org/idleberg/brackets-hopscotch)
 
 Color scheme inspired by the [Hopscotch](http://www.gethopscotch.com/) learning platform for kids
 

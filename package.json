@@ -1,15 +1,30 @@
 {
-    "name": "idleberg.hopscotch",
-    "title": "Hopscotch",
-    "description": "Color schemes inspired by the Hopscotch learning platform for kids",
-    "homepage": "https://github.com/idleberg/brackets-hopscotch",
-    "version": "1.0.2",
-    "author": "Jan T. Sott",
-    "license": "CC0-1.0",
-    "theme": {
-        "file": "hopscotch.css",
-        "dark": true
-    },
-    "keywords": ["theme"],
-    "screenshot": "preview.png"
+  "name": "idleberg.hopscotch",
+  "title": "Hopscotch",
+  "description": "Color schemes inspired by the Hopscotch learning platform for kids",
+  "homepage": "https://github.com/idleberg/brackets-hopscotch",
+  "repository": "https://github.com/idleberg/brackets-hopscotch",
+  "version": "1.1.0",
+  "author": "Jan T. Sott",
+  "license": "CC0-1.0",
+  "theme": {
+    "file": "hopscotch.less",
+    "dark": true
+  },
+  "keywords": [
+    "theme"
+  ],
+  "screenshot": "preview.png",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-coffeelint": "^0.5.0",
+    "gulp-csslint": "^0.2.0",
+    "gulp-debug": "^2.1.0",
+    "gulp-jshint": "^1.11.2",
+    "gulp-jsonlint": "^1.1.1",
+    "gulp-recess": "^1.1.2"
+  },
+  "scripts": {
+    "test": "gulp lint"
+  }
 }
