@@ -1,52 +1,69 @@
-var gulp = require('gulp');
-var csslint = require('gulp-csslint');
-var debug = require('gulp-debug');
-var coffeelint = require('gulp-coffeelint');
-var jshint = require('gulp-jshint');
-var jsonlint = require('gulp-jsonlint');
-var recess = require('gulp-recess');
+// Dependencies
+const coffeelint = require('gulp-coffeelint');
+const debug = require('gulp-debug');
+const gulp = require('gulp');
+const jshint = require('gulp-jshint');
+const jsonlint = require('gulp-jsonlint');
+const lesshint = require('gulp-lesshint');
+const stylish = require('coffeelint-stylish');
+
+// Files
+const coffeeFiles = [
+    './grammars/*.cson',
+    './keymaps/*.cson',
+    './lib/**/*.coffee',
+    './menus/*.cson',
+    './snippets/*.cson'
+];
+
+const jsFiles = [
+    './lib/**/*.js'
+];
+
+const jsonFiles = [
+    './grammars/*.json',
+    './keymaps/*.json',
+    './menus/*.json',
+    './snippets/*.json',
+    './package.json'
+];
+
+const lessFiles = [
+    './styles/**/*.less'
+];
 
 // Tasks
-gulp.task('lint', ['coffeelint', 'csslint', 'jshint', 'jsonlint', 'recess']);
-
-// Exclude node_modules
-var self = '!node_modules/**/*';
+gulp.task('lint', ['lint:coffee', 'lint:js', 'lint:json', 'lint:less']);
 
 // Lint CoffeeScript & CSON files
-gulp.task('coffeelint', function () {
-    gulp.src(['./**/*.cson', './**/*.coffee', self])
+gulp.task('lint:coffee', function () {
+    gulp.src(coffeeFiles)
         .pipe(debug({title: 'coffeelint:'}))
         .pipe(coffeelint())
-        .pipe(coffeelint.reporter())
-});
-
-// Lint CSS files
-gulp.task('csslint', function () {
-    gulp.src(['./**/*.css', self])
-        .pipe(debug({title: 'csslint:'}))
-        .pipe(csslint())
-        .pipe(csslint.reporter());
+        .pipe(coffeelint.reporter(stylish))
+        .pipe(coffeelint.reporter('fail'));
 });
 
 // Lint LESS files
-gulp.task('recess', function () {
-     gulp.src(['./**/*.less', self])
-        .pipe(debug({title: 'recess:'}))
-        .pipe(recess({"noIDs": false, "noOverqualifying": false, "strictPropertyOrder": false} ))
-        .pipe(recess.reporter());
+gulp.task('lint:less', function () {
+     gulp.src(lessFiles)
+        .pipe(debug({title: 'lesshint:'}))
+        .pipe(lesshint())
+        .pipe(lesshint.reporter());
 });
 
 // Lint JavaScript files
-gulp.task('jshint', function() {
-    return gulp.src(['./**/*.js', self])
+gulp.task('lint:js', function() {
+    return gulp.src(jsFiles)
         .pipe(debug({title: 'jshint:'}))
-        .pipe(jshint())
+        .pipe(jshint());
 });
 
 // Lint JSON files
-gulp.task('jsonlint', function() {
-   gulp.src(['./**/*.json', self])
+gulp.task('lint:json', function() {
+   gulp.src(jsonFiles)
         .pipe(debug({title: 'jsonlint:'}))
         .pipe(jsonlint())
+        .pipe(jsonlint.failAfterError())
         .pipe(jsonlint.reporter());
 });
