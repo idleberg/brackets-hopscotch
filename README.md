@@ -31,6 +31,7 @@ Also [available](https://github.com/idleberg/Hopscotch) for these apps:
 * [Sublime Text](https://packagecontrol.io/packages/Hopscotch%20Color%20Scheme) / TextMate
 * Vim
 * Visual Studio
+* [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=idleberg.nsis)
 * Windows Command Prompt
 
 ## Installation
